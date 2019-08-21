@@ -1,0 +1,9 @@
+server:
+  port: 8787
+spring:
+  application:
+    name: market-cv
+
+ali:
+  accessKeyID: LTAIPXQuxFJ7477m
+  accessKeySecret: cUW4bir9z0pBJX05g3ozMytBiVSgWt
