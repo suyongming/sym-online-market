@@ -21,6 +21,7 @@ import java.util.Map;
  */
 @ConfigurationProperties(prefix = "dynamic")
 public class DynamicDataSourceProperties {
+
     private Map<String, DataSourceProperties> datasource = new LinkedHashMap<>();
 
     public Map<String, DataSourceProperties> getDatasource() {
