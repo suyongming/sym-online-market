@@ -1,11 +1,11 @@
-cus:
-  name: suyongming
-  password: 476231418
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://${cus.name}:${cus.password}@localhost:8761/eureka
+#cus:
+#  name: suyongming
+#  password: 476231418
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://${cus.name}:${cus.password}@localhost:8761/eureka
 
 # Tomcat
 server:
@@ -22,8 +22,8 @@ spring:
   # 环境 dev|test|prod
   profiles:
     active: dev
-  application:
-    name: market-admin
+#  application:
+#    name: market-admin
   # jackson时间格式化
   jackson:
     time-zone: GMT+8
