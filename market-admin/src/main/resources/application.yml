@@ -9,6 +9,11 @@
 
 # Tomcat
 server:
+#  port: 443
+#    ssl:
+#      key-store: classpath:2942853_yomiko.pfx
+#      key-store-password: qFJhe8Ti
+#      keyStoreType: PKCS12
   tomcat:
     uri-encoding: UTF-8
     max-threads: 1000
