@@ -1,4 +1,4 @@
-package com.sym.alicv;
+package com.sym.common.utils.alicv;
 
 import java.io.BufferedReader;
 import java.io.IOException;
