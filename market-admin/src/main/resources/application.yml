@@ -94,3 +94,15 @@ renren:
     # token有效时长，7天，单位秒
     expire: 604800
     header: token
+
+
+ali:
+  accessKeyID: LTAIPXQuxFJ7477m
+  accessKeySecret: cUW4bir9z0pBJX05g3ozMytBiVSgWt
+  #阿里云人脸识别AK配置
+  ak_id: LTAIPXQuxFJ7477m
+  ak_secret: cUW4bir9z0pBJX05g3ozMytBiVSgWt
+  #人脸对比API接口调用地址
+  verifyUrl=https: //dtplus-cn-shanghai.data.aliyuncs.com/face/verify
+  #人脸检测API接口调用地址
+  detectUrl=https: //dtplus-cn-shanghai.data.aliyuncs.com/face/detect
