@@ -16,7 +16,12 @@ server:
   port: 8080
   connection-timeout: 5000ms
   servlet:
-    context-path: /renren-fast
+    context-path: /market-admin
+    #  ssl:
+    #    key-store: classpath:yomiko.keystore
+    #    key-store-password: 123456
+    #    keyStoreType: jks
+    #    keyAlias: yomiko
 
 spring:
   # 环境 dev|test|prod
@@ -89,3 +94,13 @@ renren:
     # token有效时长，7天，单位秒
     expire: 604800
     header: token
+
+ali:
+  accessKeyID: LTAIPXQuxFJ7477m
+  accessKeySecret: cUW4bir9z0pBJX05g3ozMytBiVSgWt
+  #人脸对比API接口调用地址uri
+  verifyUrl: https://dtplus-cn-shanghai.data.aliyuncs.com/face/verify
+  #人脸检测API接口调用地址
+  detectUrl: https://dtplus-cn-shanghai.data.aliyuncs.com/face/detect
+  #人脸属性检测API接口调用地址
+  attributeUrl: https://dtplus-cn-shanghai.data.aliyuncs.com/face/attribute
