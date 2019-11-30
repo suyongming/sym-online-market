@@ -1,4 +1,4 @@
-package com.sym.alicv;
+package com.sym.common.utils.alicv;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -209,8 +209,8 @@ public class LocalFaceUtil{
         }
         public static void main(String[] args) throws Exception {
             // 发送POST请求示例
-            String ak_id = "******"; //用户ak
-            String ak_secret = "******"; // 用户ak_secret
+            String ak_id = "LTAIPXQuxFJ7477m"; //用户ak
+            String ak_secret = "cUW4bir9z0pBJX05g3ozMytBiVSgWt"; // 用户ak_secret
             String url = "https://dtplus-cn-shanghai.data.aliyuncs.com/face/attribute";
 
             //上传本地图片
