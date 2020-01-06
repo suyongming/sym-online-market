@@ -3,8 +3,6 @@ package com.sym.common.utils;
 import lombok.extern.slf4j.Slf4j;
 import net.coobird.thumbnailator.Thumbnails;
 import org.apache.commons.codec.binary.Base64;
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -55,8 +53,8 @@ public class Img2Base64 {
             inStream.close();
             byte[] data = outStream.toByteArray();
             //对字节数组Base64编码
-            BASE64Encoder encoder = new BASE64Encoder();
-            String base64 = encoder.encode(data);
+            Base64 encoder = new Base64();
+            String base64 = encoder.encodeToString(data);
 //            log.info("网络文件[{}]编码成base64字符串:[{}]" + url.toString() + base64);
             return base64;//返回Base64编码过的字节数组字符串
         } catch (IOException e) {
@@ -136,10 +134,10 @@ public class Img2Base64 {
     public static boolean GenerateImage(String base64str,String savepath) { //对字节数组字符串进行Base64解码并生成图片
         if (base64str == null) //图像数据为空
             return false;
-        BASE64Decoder decoder = new BASE64Decoder();
+        Base64 decoder = new Base64();
         try {
             //Base64解码
-            byte[] b = decoder.decodeBuffer(base64str);
+            byte[] b = decoder.decode(base64str);
             // System.out.println("解码完成");
             for (int i = 0; i < b.length; ++i) {
                 if (b[i] < 0) {//调整异常数据（这一步很重要）
